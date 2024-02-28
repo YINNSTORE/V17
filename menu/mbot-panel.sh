@@ -18,7 +18,7 @@ ORANGE='\033[0;33m'
 LIGHT='\033[0;37m'
 grenbo="\e[92;1m"
 
-bot="https://raw.githubusercontent.com/YINNSTORE/V17/main/ins-bot.sh"
+bot="https://raw.githubusercontent.com/YINNSTORE/V17/main/bot.sh"
 red() { echo -e "\\033[32;1m${*}\\033[0m"; }
 IPVPES="https://raw.githubusercontent.com/YINNSTORE/izinsc/main/ip"
 clear
