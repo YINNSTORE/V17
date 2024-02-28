@@ -46,7 +46,7 @@ wget -O port-change "https://raw.githubusercontent.com/YINNSTORE/V17/main/port/p
 wget -O certv2ray "https://raw.githubusercontent.com/YINNSTORE/V17/main/xray/certv2ray.sh"
 wget -O menu-webmin "https://raw.githubusercontent.com/YINNSTORE/V17/main/menu/menu-webmin.sh"
 wget -O speedtest "https://raw.githubusercontent.com/YINNSTORE/V17/main/ssh/speedtest_cli.py"
-wget -O about "https://raw.githubusercontent.com/YINNSTORE/V17/main/menu/about.sh"
+wget -O menu-bot "https://raw.githubusercontent.com/YINNSTORE/V17/main/menu/menu-bot.sh"
 wget -O auto-reboot "https://raw.githubusercontent.com/YINNSTORE/V17/main/menu/auto-reboot.sh"
 wget -O restart "https://raw.githubusercontent.com/YINNSTORE/V17/main/menu/restart.sh"
 wget -O bw "https://raw.githubusercontent.com/YINNSTORE/V17/main/menu/bw.sh"
