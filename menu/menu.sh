@@ -99,7 +99,7 @@ echo -e "${ksk}TROJAN$NC      ${sama}$r $tra$NC $a"
 echo -e "${ksk}TROJAN GO$NC   ${sama}$r $trgo$NC $a"
 echo -e "       ╰─────────────────────────────────────────╯" | lolcat
 echo -e "         ${blue}┌─────────────────────────────────────┐${NC}"
-echo -e "         ${blue}│$NC Version    : V1.2${NC}"
+echo -e "         ${blue}│$NC Version    : V 17.12.5${NC}"
 echo -e "         ${blue}│$NC Clent Name : $username ${NC}"
 echo -e "         ${blue}│$NC Exp Script : $valid ${w}($r $certifacate${NC} ) Days${NC}"
 echo -e "         ${blue}└─────────────────────────────────────┘${NC}"
