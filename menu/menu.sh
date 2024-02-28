@@ -104,9 +104,9 @@ echo -e "         ${blue}│$NC Clent Name : $username ${NC}"
 echo -e "         ${blue}│$NC Exp Script : $valid ${w}($r $certifacate${NC} ) Days${NC}"
 echo -e "         ${blue}└─────────────────────────────────────┘${NC}"
 lane_atas
-echo -e " ${blue}│       ${ungu}[${w}01${ungu}]${NC} SSH WS       ${ungu}[${w}05${ungu}]${NC} FEATURES              ${blue}│${NC}"
-echo -e " ${blue}│       ${ungu}[${w}02${ungu}]${NC} XRAY         ${ungu}[${w}06${ungu}]${NC} STATUS SERVICE        ${blue}│${NC}"
-echo -e " ${blue}│       ${ungu}[${w}03${ungu}]${NC} TROJAN       ${ungu}[${w}07${ungu}]${NC} MENU BOT              ${blue}│${NC}"
+echo -e " ${blue}│       ${ungu}[${w}01${ungu}]${NC} SSH WS       ${ungu}[${w}05${ungu}]${NC} MENU SETTING             ${blue}│${NC}"
+echo -e " ${blue}│       ${ungu}[${w}02${ungu}]${NC} XRAY         ${ungu}[${w}06${ungu}]${NC} MENU BOT        ${blue}│${NC}"
+echo -e " ${blue}│       ${ungu}[${w}03${ungu}]${NC} TROJAN       ${ungu}[${w}07${ungu}]${NC} STATUS SERVICE           ${blue}│${NC}"
 echo -e " ${blue}│       ${ungu}[${w}04${ungu}]${NC} MENU BACKUP  ${ungu}[${w}08${ungu}]${NC} LOG CREATE            ${blue}│${NC}"
 lane_bawah
 echo -e   ""
@@ -117,8 +117,8 @@ case $opt in
 3|03) clear ; tmenu ;;
 4|04) clear ; menu-backup ;;
 5|05) clear ; menu-set ;;
-6|06) clear ; running ;;
-7|07) clear ; mbot-panel ;;
+6|06) clear ; mbot-panel ;;
+7|07) clear ; running ;;
 8|08) clear ; cat /etc/log-create-user.log ; read -p "Press [ Enter ] For Back To Menu" ;;
 *) menu ;;
 esac
