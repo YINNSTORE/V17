@@ -118,7 +118,7 @@ case $opt in
 4|04) clear ; menu-backup ;;
 5|05) clear ; menu-set ;;
 6|06) clear ; running ;;
-7|07) clear ; wget -q https://raw.githubusercontent.com/zhets/sc/update.sh && chmod +x update.sh && ./update.sh ;;
+7|07) clear ; menu-bot.sh ;;
 8|08) clear ; cat /etc/log-create-user.log ; read -p "Press [ Enter ] For Back To Menu" ;;
 *) menu ;;
 esac
