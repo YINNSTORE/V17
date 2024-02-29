@@ -104,9 +104,9 @@ echo -e "         ${blue}│$NC Clent Name : $username ${NC}"
 echo -e "         ${blue}│$NC Exp Script : $valid ${w}($r $certifacate${NC} ) Days${NC}"
 echo -e "         ${blue}└─────────────────────────────────────┘${NC}"
 lane_atas
-echo -e " ${blue}│       ${ungu}[${w}01${ungu}]${NC} SSH WS       ${ungu}[${w}05${ungu}]${NC} MENU SETTING             ${blue}│${NC}"
-echo -e " ${blue}│       ${ungu}[${w}02${ungu}]${NC} XRAY         ${ungu}[${w}06${ungu}]${NC} MENU BOT        ${blue}│${NC}"
-echo -e " ${blue}│       ${ungu}[${w}03${ungu}]${NC} TROJAN       ${ungu}[${w}07${ungu}]${NC} STATUS SERVICE           ${blue}│${NC}"
+echo -e " ${blue}│       ${ungu}[${w}01${ungu}]${NC} SSH WS       ${ungu}[${w}05${ungu}]${NC} MENU SETTING          ${blue}│${NC}"
+echo -e " ${blue}│       ${ungu}[${w}02${ungu}]${NC} XRAY         ${ungu}[${w}06${ungu}]${NC} MENU BOT              ${blue}│${NC}"
+echo -e " ${blue}│       ${ungu}[${w}03${ungu}]${NC} TROJAN       ${ungu}[${w}07${ungu}]${NC} STATUS SERVICE        ${blue}│${NC}"
 echo -e " ${blue}│       ${ungu}[${w}04${ungu}]${NC} MENU BACKUP  ${ungu}[${w}08${ungu}]${NC} LOG CREATE            ${blue}│${NC}"
 lane_bawah
 echo -e   ""
