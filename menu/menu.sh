@@ -103,34 +103,7 @@ echo -e "         ${blue}│$NC Version    : V1.2${NC}"
 echo -e "         ${blue}│$NC Clent Name : $username ${NC}"
 echo -e "         ${blue}│$NC Exp Script : $valid ${w}($r $certifacate${NC} ) Days${NC}"
 echo -e "         ${blue}└─────────────────────────────────────┘${NC}"
-echo -e " ${y}╭────────────────────────────────────────────────────❒${NC}"
-echo -e " ${y}│$NC$z • $NC${r}ISP    ${yy}=$NC $ISP${NC}"
-echo -e " ${y}│$NC$z • $NC${r}CITY   ${yy}=$NC $CITY${NC}"
-echo -e " ${y}│$NC$z • $NC${r}OS     ${yy}=$NC $MODEL${NC}"
-echo -e " ${y}│$NC$z • $NC${r}CORE   ${yy}=$NC $CORE${NC}"
-echo -e " ${y}│$NC$z • $NC${r}RAM    ${yy}=$NC $uram MB / $RAM MB $NC"
-echo -e " ${y}│$NC$z • $NC${r}UPTIME ${yy}=$NC $SERONLINE${NC}"
-echo -e " ${y}│$NC$z • $NC${r}DOMAIN ${yy}=$z $domain${NC}"
-echo -e " ${y}│$NC$z • $NC${r}IP     ${yy}=$z $IPVPS${NC}"
-echo -e " ${y}╰─────────────────────────────────────────────────────❒${NC}"
-echo -e " ${y}╭────────────────────────────────────────────────────╮${NC}"
-echo -e " ${y}│ ${NC}${Blue} SSH$NC : $status_ssh    ${y}│$Blue NGINX$NC : $status_nginx ${y}│$Blue XRAY$NC : $status_xray     ${y}│$NC" 
-echo -e " ${y}╰────────────────────────────────────────────────────╯${NC}"
-echo -e "       ${z}╭─────────────────────────────────────────╮${NC}" | lolcat
-echo -e "                    ${gg} TOTAL ACCOUNTS ${NC}"
-echo -e ""
-echo -e "               ${z}SSH/OVPN$NC    $yy=$NC$r $ssh1$NC $a"
-echo -e "               ${z}VMESS$NC       $yy=$NC$r $vma$NC $a"
-echo -e "               ${z}VLESS$NC       $yy=$NC$r $vla$NC $a"
-echo -e "               ${z}TROJAN$NC      $yy=$NC$r $trb$NC $a"
-echo -e "               ${z}SHADOWSOCK$NC  $yy=$NC$r $ssa$NC $a"
-echo -e "       ${z}╰─────────────────────────────────────────╯${NC}" | lolcat
-echo -e "     ${y}╭─────────────────────────────────────────────❒${NC}"
-echo -e "     ${y}│$NC Version       ${yy}= $g V 17.5.12${NC}" 
-echo -e "     ${y}│$NC User          ${yy}= $g $username \e[0m"
-echo -e "     ${y}│$NC Script Status ${yy}= $NC $sts \e[0m"
-echo -e "     ${y}│$NC Expired       ${yy}= $NC $exp ( ${w}$certifacate${NC} Days ) $NC"
-echo -e "     ${y}╰─────────────────────────────────────────────❒${NC}"
+lane_atas
 echo -e " ${y}╭────────────────────────────────────────────────────╮${NC}"
 echo -e " ${y}│$NC   ${Blue}[${p}01${NC}${Blue}]$NC ${gg}MENU SSH OVPN       $NC   ${Blue}[${p}07${NC}${Blue}]$NC ${gg}MENU BOT       $y │$NC" 
 echo -e " ${y}│$NC   ${Blue}[${p}02${NC}${Blue}]$NC ${gg}MENU VMESS          $NC   ${Blue}[${p}08${NC}${Blue}]$NC ${gg}INFO PORT      $y │$NC"    
@@ -139,17 +112,25 @@ echo -e " ${y}│$NC   ${Blue}[${p}04${NC}${Blue}]$NC ${gg}MENU TROJAN         $
 echo -e " ${y}│$NC   ${Blue}[${p}05${NC}${Blue}]$NC ${gg}MENU SHADOWSOCK     $NC   ${Blue}[${p}11${NC}${Blue}]$NC ${gg}CHECK RUNNING  $y │$NC"
 echo -e " ${y}│$NC   ${Blue}[${p}06${NC}${Blue}]$NC ${gg}MENU SYSTEM         $NC   ${Blue}[${p}12${NC}${Blue}]$NC ${gg}SPEEDTEST VPS  $y │$NC"
 echo -e " ${y}╰────────────────────────────────────────────────────╯${NC}"
-echo -e   ""
-read -p " Select menu ⟩ " opt
+echo
+read -p "  Selected Menu ⟩ " opt
+echo -e ""
 case $opt in
-1|01) clear ; menu-ssh ;;
-2|02) clear ; xmenu ;;
-3|03) clear ; tmenu ;;
-4|04) clear ; menu-backup ;;
-5|05) clear ; menu-set ;;
-6|06) clear ; running ;;
-7|07) clear ; wget -q https://raw.githubusercontent.com/zhets/sc/update.sh && chmod +x update.sh && ./update.sh ;;
-8|08) clear ; cat /etc/log-create-user.log ; read -p "Press [ Enter ] For Back To Menu" ;;
+1) clear ; m-sshws ;;
+2) clear ; m-vmess ;;
+3) clear ; m-vless ;;
+4) clear ; m-trojan ;;
+5) clear ; m-ssws ;;
+6) clear ; m-set ;;
+7) clear ; m-bot ;;
+8) clear ; prot ;;
+9) clear
+gotop 
+echo -e " Back To Menu In 2s . . ."
+sleep 2
+menu ;;
+10) clear ; addhost ;;
+11) clear ; ckrun ;;
+12) clear ; speedtest ;;
 *) menu ;;
 esac
-
