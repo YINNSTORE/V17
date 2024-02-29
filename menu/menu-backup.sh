@@ -1,63 +1,66 @@
-#!/bin/bash
-DF='\e[39m'
-Bold='\e[1m'
-Blink='\e[5m'
-yell='\e[33m'
-red='\e[31m'
-green='\e[32m'
-blue='\e[34m'
-PURPLE='\e[35m'
-cyan='\e[36m'
-Lred='\e[91m'
-Lyellow='\e[93m'
-Lgreen='\e[92m'
-g="\e[1;92m"
-y="\e[1;93m"
-NC='\e[0m'
-GREEN='\033[0;32m'
-ORANGE='\033[0;33m'
-LIGHT='\033[0;37m'
-grenbo="\e[92;1m"
-red() { echo -e "\\033[32;1m${*}\\033[0m"; }
-# Getting
-ipsaya=$(curl -sS ipv4.icanhazip.com)
-data_server=$(curl -v --insecure --silent https://google.com/ 2>&1 | grep Date | sed -e 's/< Date: //')
-date_list=$(date +"%Y-%m-%d" -d "$data_server")
-data_ip="https://raw.githubusercontent.com/YINNSTORE/izinsc/main/ip"
-checking_sc() {
-  useexp=$(wget -qO- $data_ip | grep $ipsaya | awk '{print $3}')
-  if [[ $date_list < $useexp ]]; then
-    echo -ne
-  else
-    echo -e "\033[1;93m────────────────────────────────────────────\033[0m"
-    echo -e "\033[42m          404 NOT FOUND AUTOSCRIPT          \033[0m"
-    echo -e "\033[1;93m────────────────────────────────────────────\033[0m"
-    echo -e ""
-    echo -e "            ${RED}PERMISSION DENIED !${NC}"
-    echo -e "   \033[0;33mYour VPS${NC} $ipsaya \033[0;33mHas been Banned${NC}"
-    echo -e "     \033[0;33mBuy access permissions for scripts${NC}"
-    echo -e "             \033[0;33mContact Admin :${NC}"
-    echo -e "      \033[0;36mTelegram${NC} t.me/×××"
-    echo -e "\033[1;93m────────────────────────────────────────────\033[0m"
-    exit
-  fi
-}
-checking_sc
 clear
-echo -e "  ${y}┌──────────────────────────────────────────┐${NC}"
-echo -e "  ${y}│${NC}${g}               BACKUP & RESTORE           ${y}│${NC}"
-echo -e "  ${y}└──────────────────────────────────────────┘${NC}"
-echo -e "  ${y}┌──────────────────────────────────────────┐${NC}"
-echo -e "  ${y}│${NC}${g} 01.${NC} \033[0;36mBackup VPS Data ${NC}"
-echo -e "  ${y}│${NC}${g} 02.${NC} \033[0;36mRestore VPS Data ${NC}"
-echo -e "  ${y}│${NC}${g} 00.${NC} \033[0;36mBack To Menu ${NC}"
-echo -e "  ${y}└──────────────────────────────────────────┘${NC}"
-echo -e ""
-read -p "    Select menu : " opt
-echo -e ""
-case $opt in
-01 | 1) clear ; backup ;;
-02 | 2) clear ; restore ;;
-00 | 0) clear ; menu ;;
-*) clear ; m-backup ;;
-esac
+grenbo="\e[92;1m"
+NC='\e[0m' # penutup
+clear
+echo -e "\033[1;93m┌──────────────────────────────────────────┐\033[0m"
+echo -e "\033[1;93m│$NC\033[42m          BCKP MANAGER RE                 $NC"
+echo -e "\033[1;93m└──────────────────────────────────────────┘\033[0m"
+echo -e "\033[1;93m┌──────────────────────────────────────────┐\033[0m"
+echo -e "\033[1;93m│  ${grenbo}1.${NC} \033[0;36mBackup Vps Data${NC}"
+echo -e "\033[1;93m│  ${grenbo}2.${NC} \033[0;36mRestored Vps Data${NC}"
+echo -e "\033[1;93m│  ${grenbo}0.${NC} \033[0;36mComeback${NC}"
+echo -e "\033[1;93m└──────────────────────────────────────────┘\033[0m"
+echo
+echo -e "${BlueCyan}"
+read -p    "Pilih Nomor └╼>>> " bro
+
+if [ $bro = 1 ] || [ $bro = 1 ]
+then
+figlet "backup" | lolcat
+backup
+echo "--------------------------------------------------------"
+echo
+echo "Terimakasih Sudah Mamakai Script Goblok Ini"
+echo
+echo "--------------------------------------------------------"
+fi
+
+if [ $bro = 2 ] || [ $bro = 2 ]
+then
+figlet "Restore" | lolcat
+restore
+echo "--------------------------------------------------------"
+echo
+echo "Terimakasih Sudah Mamakai Script Goblok Ini"
+echo
+echo "--------------------------------------------------------"
+fi
+if [ $bro = 0 ] || [ $bro = 0 ]
+then
+figlet "ok"
+menu
+echo "--------------------------------------------------------"
+echo
+echo "Terimakasih Sudah Mamakai Script Goblok Ini"
+echo
+echo "--------------------------------------------------------"
+fi
+if [ $bro = 4 ] || [ $bro = 4 ]
+then
+limitspeed
+echo "--------------------------------------------------------"
+echo
+echo "Terimakasih Sudah Mamakai Script Goblok Ini"
+echo
+echo "--------------------------------------------------------"
+fi
+
+if [ $bro = 5 ] || [ $bro = 5 ]
+then
+autobackup
+echo "--------------------------------------------------------"
+echo
+echo "Terimakasih Sudah Mamakai Script Goblok Ini"
+echo
+echo "--------------------------------------------------------"
+fi
